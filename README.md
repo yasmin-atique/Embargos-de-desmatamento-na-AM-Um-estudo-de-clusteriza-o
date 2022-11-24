@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/101889306/203840956-42429811-c974-4f1c-a75e-3baffc4ec628.png)
 
-#                  Modelo de Clusterização para identificação de Focos de Desmatamento na Floresta Amazônica
+#                  Modelo de Clusterização para identificação de Focos de Desmatamento na Floresta Amazônica e Análise Temporal
 ## Objetivos
 - Localizar os núcleos de desmatamento na Floresta Amazônica;
 - Realizar análise temporal por núcleo identificado.
