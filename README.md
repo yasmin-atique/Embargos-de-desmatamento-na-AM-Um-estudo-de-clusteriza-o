@@ -23,6 +23,8 @@ Para este estudo, foram considerados como min_cluster_size = 10, e min_samples =
 
 ## Tecnologia
 - Python 3.9.7
+- Surfer
+- QGIS
 
 ## Serviços
 - GitHub
