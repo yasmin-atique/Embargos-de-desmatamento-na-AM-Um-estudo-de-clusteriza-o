@@ -51,12 +51,12 @@ Após a conclusão de todas as etapas de limpeza de dados foram recuperadas 8.38
 ## Análise de dados
 
 Como resultado do modelo, foi possível observar 26 focos de desmatamento ao longo da Floresta Amazônica, sendo a maior densidade de clusters situada ao sul, conforme pode ser obsevado na Figura a seguir.
-![image](https://user-images.githubusercontent.com/101889306/203857799-84bb4a25-4f8c-46a4-bb26-e9678132903b.png)
+![Figura 1 - Clusters](https://user-images.githubusercontent.com/101889306/204004944-60c2dc02-2918-4de3-94cd-1c70a7152813.jpg)
 
 Foi feita análise temporal dos clusters encontrados, e foi possível notar um padrão de picos de desmatamento nos anos de 2008 e 2012, ou ambos os anos. Esses clusters foram agrupados e representados na Figura 2.
 
-![image](https://user-images.githubusercontent.com/101889306/203858441-8d0d60d1-22a2-4cbc-a713-b99ab5f996a4.png)
+![Figura 2 - densidade por ano](https://user-images.githubusercontent.com/101889306/204004984-2c4c5c91-bb7d-41e2-b4dd-ccda5695700e.jpg)
 
 Ao realizar avaliar a variação da quantidade de registros mensais por cluster, não foi possível notar padrões entre eles. Portanto, os clusters que apresentaram mais de 40 registros a cada bimestre foram reportados na Figura 3.
 
-![image](https://user-images.githubusercontent.com/101889306/203869285-b183df24-ebc6-45c1-b94a-91608a31f0fc.png)
+![Figura 3 - bimestre_REDUZ](https://user-images.githubusercontent.com/101889306/204005554-c4ed79cd-26d6-461f-9d1e-21997c745b07.jpg)
