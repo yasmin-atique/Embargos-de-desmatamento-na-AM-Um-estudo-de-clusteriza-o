@@ -60,3 +60,6 @@ Foi feita análise temporal dos clusters encontrados, e foi possível notar um p
 Ao realizar avaliar a variação da quantidade de registros mensais por cluster, não foi possível notar padrões entre eles. Portanto, os clusters que apresentaram mais de 40 registros a cada bimestre foram reportados na Figura 3.
 
 ![Figura 3 - bimestre_REDUZ](https://user-images.githubusercontent.com/101889306/204005554-c4ed79cd-26d6-461f-9d1e-21997c745b07.jpg)
+
+## Próximos passos
+- Avaliar onde estão os posto de atendimento do Ibama, para entrender se os locais com menor quantidade de registros estão associados a falta de fiscalização.
