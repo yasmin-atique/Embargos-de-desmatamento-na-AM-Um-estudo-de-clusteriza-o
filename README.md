@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/101889306/203840956-42429811-c974-4f1c-a75e-3baffc4ec628.png)
 
-#                  Modelo de Clusterização para identificação de Focos de Desmatamento na Floresta Amazônica e Análise Temporal
+#                  Modelo de Clusterização para Identificação de Focos de Desmatamento na Floresta Amazônica e Análise Temporal
 ## Objetivos
 - Localizar os núcleos de desmatamento na Floresta Amazônica;
 - Realizar análise temporal por núcleo identificado.
@@ -41,9 +41,9 @@ Para este estudo, foram considerados como min_cluster_size = 10, e min_samples =
 ## Limpeza e validação dos dados
 Após a importação dos dados foi possível notar que há uma grande quantidade de valores NaN no dataset. Foram selecionadas as colunas para início da limpeza, as quais estão associadas com o objetivo deste trabalho.
 
-A Tabela, a seguir, apresenta a quantidade de valores NaN no dataset, o tipo dos dados e as colunas selecionadas.
+A Tabela, a seguir, apresenta a quantidade de valores NaN no dataset, o tipo dos dados e as colunas selecionadas (destacadas em vermelho).
 
-![image](https://user-images.githubusercontent.com/101889306/203857754-4e9a4284-68af-40fc-ae7a-a838ba9c41be.png)
+![image](https://user-images.githubusercontent.com/101889306/204061234-b8784aca-45e1-4215-bf26-18c068bd6055.png)
 
 1) Foi utilizado regex para tratar NaN e validar a coluna 'Desmatamento';
 2) A coluna 'UF_infração', o padrão regex [Aa][m][a][z] e o código do município foram utilizados para tratar os valores NaN da coluna 'Bioma';
@@ -56,7 +56,7 @@ Após a conclusão de todas as etapas de limpeza de dados foram recuperadas 8.38
 
 Como resultado do modelo, foi possível observar 26 focos de desmatamento ao longo da Floresta Amazônica, sendo a maior densidade de clusters situada ao norte do estado do Mato Grosso e por todo o estado de Rondônia e Pará, além das porções leste e oeste do Acre e leste do Roraima. Os centroides calculados não ignoram as ocorrências consideradas como ruído no modelo HDBSCAN, podendo indicar possíveis novas localizações de postos do Ibama.
 A Figura 1, a seguir, apresenta a representação gráfica do modelo de clusterização.
-![Figura 1 - Clusters](https://user-images.githubusercontent.com/101889306/204004944-60c2dc02-2918-4de3-94cd-1c70a7152813.jpg)
+![Figura 1 - clusters](https://user-images.githubusercontent.com/101889306/204063142-d036598a-cc47-4e63-bc87-381cc31929ce.jpeg)
 
 Foi feita análise temporal dos clusters encontrados, e foi possível notar um padrão de picos de desmatamento nos anos de 2008 e 2012, ou ambos os anos. Esses clusters foram agrupados e representados na Figura 2.
 
@@ -64,7 +64,7 @@ Foi feita análise temporal dos clusters encontrados, e foi possível notar um p
 
 Ao avaliar a variação da quantidade de registros mensais por cluster, não foi possível notar padrões entre os membros dos grupos encontrados durante a avaliação anual. Portanto, os clusters que apresentaram mais de 40 registros a cada bimestre foram reportados na Figura 3, com o objetivo de orientar o Ibama na alocação de recursos.
 
-![Figura 3 - bimestre_REDUZ](https://user-images.githubusercontent.com/101889306/204005554-c4ed79cd-26d6-461f-9d1e-21997c745b07.jpg)
+![WhatsApp Image 2022-11-25 at 20 37 08](https://user-images.githubusercontent.com/101889306/204063330-d5fa34e8-26ff-4c95-a0bf-e354c9bb188a.jpeg)
 
 ## Próximos passos
 - Avaliar onde estão os posto de atendimento do Ibama, para entender se os locais com menor quantidade de registros estão associados a falta de fiscalização.
