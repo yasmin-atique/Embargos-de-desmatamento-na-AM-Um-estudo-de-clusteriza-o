@@ -11,9 +11,9 @@ https://servicos.ibama.gov.br/ctf/publico/areasembargadas/ConsultaPublicaAreasEm
 
 ## Metodologia
 Foi utilizado o algoritmo não supervisionado HDBSCAN.
-O HDBSCAN é um método hierarquico de clusterização, baseado em densidade. Isso significa que ele funciona melhor com datasets com distribuição espacial complexa e grande densidade de dados.
+O HDBSCAN é um método hierarquico de clusterização, baseado em densidade. 
 
-Diferentemente do DBSCAN, visto em aula, o HDB não possui o eps como parâmetro. Faz parte do modelo testar vários eps até encontrar as características de entrada no modelo (ou default).
+Diferentemente do DBSCAN, visto em aula, o HDB não possui o eps como parâmetro, uma vez que não utiliza um eps única, porém determina clusters diferentes com diferentes densidades.
 
 Os principais parâmetros de entrada são:
 - min_cluster_size - quanto maior o valor, menor a quantidade de clusters;
@@ -57,8 +57,6 @@ Foi feita análise temporal dos clusters encontrados, e foi possível notar um p
 
 ![image](https://user-images.githubusercontent.com/101889306/203858441-8d0d60d1-22a2-4cbc-a713-b99ab5f996a4.png)
 
-Ao realizar avaliar a variação da quantidade de registros mensais por cluster, não foi possível notar padrões entre eles. Portanto, os clusters que apresentaram mais de 30 registros a cada bimestre foram reportados na Figura 3.
+Ao realizar avaliar a variação da quantidade de registros mensais por cluster, não foi possível notar padrões entre eles. Portanto, os clusters que apresentaram mais de 40 registros a cada bimestre foram reportados na Figura 3.
 
-![image](https://user-images.githubusercontent.com/101889306/203859141-cb1ba5bf-d302-4b5e-9909-67e3bff50dca.png)
-
-## Próximos passos
+![image](https://user-images.githubusercontent.com/101889306/203869285-b183df24-ebc6-45c1-b94a-91608a31f0fc.png)
